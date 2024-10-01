@@ -1,3 +1,6 @@
+import './global.css';
+import './declaration.d.ts';
+
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
