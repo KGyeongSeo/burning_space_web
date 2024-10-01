@@ -5,10 +5,10 @@ export const RouterPath = {
   },
   blog: {
     url: '/blog/:id',
-    getUrl: (id: string) => `/blog/${id}`,
+    getUrl: (id) => `/blog/${id}`,
   },
   project: {
     url: '/project/:id',
-    getUrl: (id: string) => `/project/${id}`,
+    getUrl: (id) => `/project/${id}`,
   },
 };
