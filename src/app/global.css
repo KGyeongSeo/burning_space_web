@@ -1,0 +1,13 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+:root{
+    --color-main: #84156A;
+    --color-side: #236D72;
+    --color-black: #1a1a1a;
+}
+
+body{
+    font-family: 'Pretendard Variable', sans-serif;
+    background-color: var(--color-black);
+    color: white;
+}
