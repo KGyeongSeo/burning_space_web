@@ -6,13 +6,14 @@ import globals from "globals";
 export default [
   { files: ["**/*.{js,mjs,cjs,jsx}"] },
   { languageOptions: { globals: globals.browser } },
+  pluginJs.configs.recommended,
+  pluginReact.configs.flat.recommended,
   {
     plugins: { "simple-import-sort": simpleImportSort },
     rules: {
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
+      "react/prop-types": 0,
     }
   },
-  pluginJs.configs.recommended,
-  pluginReact.configs.flat.recommended,
 ];
