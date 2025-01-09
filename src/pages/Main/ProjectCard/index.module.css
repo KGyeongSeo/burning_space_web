@@ -1,0 +1,80 @@
+.container:hover{transform: perspective(1000px) rotateY(180deg);}
+.container{
+    display: inline-grid;
+    color: white;
+    transition: transform 0.5s;
+    transform: perspective(1000px) rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.container > * {
+    grid-area: 1 / 1 / 1 / 1;
+    backface-visibility: hidden;
+}
+.cardFront, .cardBack{
+    position: relative;
+    background-color: #84156A;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+    height: 335px;
+}
+.cardFront img{
+    width: 600px;
+    height: 335px;
+    border-radius: 20px;
+    padding: 0;
+}
+.cardFront h2, .cardFront h3{
+    position: absolute;
+    background: #84156A;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
+    border-radius: 20px;
+}
+.cardFront h2 {
+    left: 0;
+    top: 0;
+}
+.cardFront h3 {
+    right: 0;
+    bottom: 0;
+}
+.cardBack {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardBackWrap{
+    width: 600px;
+    height: 295px;
+    padding: 20px;
+    background-color: #450f2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.cardBackWrap h2, .cardBackWrap h3 {
+    margin: 5px;
+}
+.button1 button {
+    border-color: #84156A;
+    background-color: #450f2d;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+.button1 button a {
+    color:#fff;
+    text-decoration: none;
+}
+.button1 button:hover {
+    background-color: #84156A;
+}
