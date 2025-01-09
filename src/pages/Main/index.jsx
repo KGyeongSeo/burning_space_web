@@ -26,13 +26,15 @@ export default function Main() {
   return (
     <div>
       <header className={styles.header}>
-        <img src='/src/images/logo.png' alt='logo' />
+        <img src='/src/assets/logo.png' alt='logo' />
         <h1>Burning Space</h1>
       </header>
       <Carrosel />
-      {PROJECT.map((project) => (
-        <ProjectCard key={project.id} {...project} />
-      ))}
+      <section className={styles.projectContainer}>
+        {PROJECT.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
+      </section>
     </div>
   );
 }

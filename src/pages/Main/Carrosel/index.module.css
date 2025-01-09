@@ -4,11 +4,6 @@
   align-items: center;
 }
 
-img {
-  display: block;
-  object-fit: cover;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -46,7 +41,12 @@ img {
   transform: rotateY(calc(360deg / var(--num) * var(--index))) translateZ(var(--tz));
   background: linear-gradient(-229deg, #fbd52d, #ef3a7b);
 }
-
+.carrossel_item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
 .carrossel_item:hover {
   opacity: 1;
 }

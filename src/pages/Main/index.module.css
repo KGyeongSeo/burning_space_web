@@ -19,3 +19,11 @@
   font-size: 6rem;
   font-weight: 900;
 }
+
+.projectContainer {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
