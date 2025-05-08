@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import styles from './index.module.css';
 
 export default function ProjectCard({ title, subheading, img, content }) {
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
       <div className={styles.cardFront}>
@@ -16,8 +18,13 @@ export default function ProjectCard({ title, subheading, img, content }) {
           <h3>{subheading}</h3>
           <p className={styles.contents}>{content}</p>
           <div className={styles.button1}>
-            <button>
-              <a href=''>더보기&gt;</a>
+            <button
+              type='button'
+              onClick={() => {
+                navigate(``);
+              }}
+            >
+              더보기&gt;
             </button>
           </div>
         </div>
